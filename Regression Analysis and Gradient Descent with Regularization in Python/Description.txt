@@ -1,0 +1,18 @@
+This code contains several functions and procedures related to generating input data for regression, calculating target vectors, performing gradient descent with regularization, and visualizing the process. Let's break down the summary:
+
+1. `generate_input_data` Function: This function generates input data matrix X for regression. It takes three parameters: N (number of samples), M (number of columns), and D (number of dimensions). It returns a data matrix X of size NxD.
+
+2. `gen_target_vector` Function: This function generates a target vector (t_with_noise) using input data matrix X, weight vector w, and noise variance sigma. It calculates the target vector by multiplying X with the weight vector and adding noise to it.
+
+3. Gradient Descent with Regularization:
+   - `gradient_mean_square_error` Function: Calculates the gradient of the Mean Square Error.
+   - `regularization_cost` Function: Calculates the cost function with regularization terms.
+   - `gradient_descent` Function: Performs gradient descent optimization with L1 and L2 regularization. It iteratively updates weights to minimize the regularized cost.
+
+4. Visualization:
+   - It visualizes the process time for calculating the pseudo-inverse with different sample sizes.
+   - It plots the convergence of gradient descent with regularization by showing the regularized cost over iterations.
+
+The code also includes the initialization of variables, user input prompts for sample sizes and dimensions, and random data generation for experimentation. Additionally, it prints the root mean square error (RMSE) and the gradients of different regularization norms.
+
+Overall, this code demonstrates various aspects of regression modeling, including data generation, target vector calculation, gradient descent optimization with regularization, and visualization of optimization convergence.
